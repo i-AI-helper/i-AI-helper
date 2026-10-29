@@ -8,17 +8,17 @@
 
 ### Systems & Security Engineering
 
-Ingénieur systèmes et sécurité spécialisé dans les environnements d'exécution bas niveau déterministes, les outils d'analyse binaire, la sécurité mémoire et les noyaux d'inférence d'IA locale optimisés. Privilégiant l'architecture basée sur les premiers principes et les compilations reproductibles.
+Ingénieur systèmes et sécurité senior spécialisé dans la conception d'environnements d'exécution bas niveau déterministes, d'outils d'analyse binaire, de sécurité mémoire et de pipelines de concurrence haute performance. Privilégiant l'architecture basée sur les premiers principes et les compilations reproductibles.
 
 ---
 
-### Principes d'Architecture et Domaines de Recherche
+### Principes Fondamentaux d'Ingénierie
 
-- **Exécution Déterministe**: Garantie de reproductibilité exacte au bit près à travers les chaînes de compilation et environnements d'exécution.
-- **Sécurité Mémoire et Intégrité du Runtime**: Audit approfondi des frontières natives, modèles de mémoire basés sur les capacités et isolation des surfaces d'exécution.
-- **Calcul Haute Performance à Faible Latence**: Calcul vectoriel SIMD/AVX et disposition des structures de données cohérente avec le cache.
-- **Rétro-ingénierie Médico-légale**: Chaînes de décompilation, invariants d'analyse statique et vérification comportementale déterministe.
-- **Accélération de l'Inférence en Périphérie**: Algorithmes de quantification (GGUF, AWQ, EXL2) et graphes d'exécution optimisés pour le matériel local.
+- **Exécution Déterministe (Deterministic Execution)**: Garantie de reproductibilité et d'invariance exacte au bit près à travers les chaînes de compilation et environnements d'exécution.
+- **Sécurité Mémoire et Intégrité du Runtime (Memory Safety & Runtime Integrity)**: Audit approfondi des frontières natives, modèles de mémoire basés sur les capacités et isolation des surfaces d'exécution.
+- **Calcul Haute Performance à Faible Latence (Low-Overhead HPC)**: Calcul vectoriel SIMD/AVX et disposition des structures de données cohérente avec le cache.
+- **Contrôle de Concurrence et Structures Lock-Free (Concurrency & Lock-Free Design)**: Bagues tampons sans verrou (Lock-Free), primitives de synchronisation atomiques et conception adaptée à la mémoire cache.
+- **Analyse Médico-légale Binaire et Audit (Binary Forensics & Audit)**: Vérification des invariants par analyse statique, décompilation approfondie et analyse du flux de contrôle.
 
 ---
 
@@ -27,9 +27,9 @@ Ingénieur systèmes et sécurité spécialisé dans les environnements d'exécu
 | Domaine | Technologies Clés et Outils |
 | :--- | :--- |
 | **Systèmes et Bas Niveau** | C, C++, Rust, Go, Assembleur x86_64 / ARM64, Noyau Linux / Internes Windows NT |
-| **Rétro-ingénierie et Sécurité** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, Outils AST LLVM / Clang |
-| **Inférence et Accélération** | CUDA, llama.cpp / GGUF, TensorRT, Triton, OpenVINO, ONNX Runtime |
-| **Systèmes Distribués et Cloud Native** | Linux eBPF, Docker, Runtimes POSIX, gRPC Haute Performance / Protocol Buffers |
+| **Analyse Binaire et Sécurité** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, Outils AST LLVM / Clang |
+| **Calcul Parallèle et Optimisation** | CUDA, SIMD (AVX2/AVX-512/NEON), OpenMP, Cache Profiling, Compiler Optimization |
+| **Systèmes Distribués et Réseaux** | Linux eBPF, Docker, Runtimes POSIX, gRPC Haute Performance / Protocol Buffers |
 | **Stockage et Concurrence** | Zero-Copy I/O, Ring Buffers sans verrou, Arbres LSM, Persistance en mémoire mappée |
 
 ---
@@ -37,8 +37,8 @@ Ingénieur systèmes et sécurité spécialisé dans les environnements d'exécu
 ### Répertoire des Plateformes
 
 - **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Dépôts sources principaux, runtimes systèmes et spécifications d'ingénierie.
-- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Miroirs d'intégration continue et pipelines de vérification automatisée.
-- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Points de contrôle de quantification, jeux de données de référence et noyaux d'inférence.
+- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Environnements de vérification de compilation, bancs de test et dépôts miroirs.
+- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Noyaux de calcul numérique haute performance, jeux de données de référence et spécifications d'évaluation.
 
 ---
 

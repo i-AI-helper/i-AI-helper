@@ -8,17 +8,17 @@
 
 ### Systems & Security Engineering
 
-Ingeniero de sistemas y seguridad enfocado en entornos de ejecución de bajo nivel deterministas, herramientas de análisis binario, entornos de memoria segura y núcleos optimizados de inferencia de IA local. Comprometido con la arquitectura basada en primeros principios y las compilaciones reproducibles.
+Ingeniero de sistemas y seguridad sénior enfocado en entornos de ejecución de bajo nivel deterministas, herramientas de análisis binario, entornos de memoria segura y canales de concurrencia de alto rendimiento. Comprometido con la arquitectura basada en primeros principios y las compilaciones reproducibles.
 
 ---
 
-### Principios Fundamentales de Arquitectura
+### Principios Fundamentales de Ingeniería
 
-- **Ejecución Determinista**: Garantía de reproducibilidad exacta a nivel de bit en todas las cadenas de herramientas y compiladores.
-- **Seguridad de Memoria e Integridad de Runtime**: Auditoría de límites nativos, aplicación de modelos de memoria basados en capacidades y aislamiento de superficies de ejecución.
-- **Computación de Alto Rendimiento con Baja Sobrecarga**: Computación vectorial SIMD/AVX y diseño de estructuras de datos coherentes con la caché.
-- **Ingeniería Inversa Forense**: Canales de descompilación, invariantes de análisis estático y verificación conductual determinista.
-- **Aceleración de Inferencia en el Borde**: Algoritmos de cuantización (GGUF, AWQ, EXL2) y grafos de ejecución optimizados para hardware local restringido.
+- **Ejecución Determinista (Deterministic Execution)**: Garantía de reproducibilidad e invariabilidad exacta a nivel de bit en todas las cadenas de herramientas y compiladores.
+- **Seguridad de Memoria e Integridad de Runtime (Memory Safety & Runtime Integrity)**: Auditoría de límites nativos, aplicación de modelos de memoria basados en capacidades y aislamiento de superficies de ejecución.
+- **Computación de Alto Rendimiento con Baja Sobrecarga (Low-Overhead HPC)**: Computación vectorial SIMD/AVX y diseño de estructuras de datos coherentes con la caché.
+- **Control de Concurrencia y Estructuras Lock-Free (Concurrency & Lock-Free Design)**: Búferes circulares sin bloqueo (Lock-Free), primitivas de sincronización atómicas y diseño coherente con la memoria caché.
+- **Análisis Forense Binario y Auditoría (Binary Forensics & Audit)**: Verificación de invariantes mediante análisis estático, descompilación profunda y análisis de flujo de control.
 
 ---
 
@@ -27,18 +27,18 @@ Ingeniero de sistemas y seguridad enfocado en entornos de ejecución de bajo niv
 | Dominio | Tecnologías Principales y Herramientas |
 | :--- | :--- |
 | **Sistemas y Bajo Nivel** | C, C++, Rust, Go, x86_64 / ARM64 Assembly, Linux Kernel / Windows NT Internals |
-| **Ingeniería Inversa y Seguridad** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
-| **Inferencia y Aceleración** | CUDA, llama.cpp / GGUF, TensorRT, Triton, OpenVINO, ONNX Runtime |
-| **Sistemas Distribuidos e Infraestructura** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
+| **Análisis Binario y Seguridad** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
+| **Computación Paralela y Optimización** | CUDA, SIMD (AVX2/AVX-512/NEON), OpenMP, Cache Profiling, Compiler Optimization |
+| **Sistemas Distribuidos y Redes** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
 | **Almacenamiento y Concurrencia** | Zero-Copy I/O, Lock-Free Ring Buffers, LSM Trees, Memory-Mapped Persistence |
 
 ---
 
 ### Plataformas
 
-- **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Repositorios principales, entornos de ejecución y especificaciones técnicas.
-- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Espejos de integración continua y pipelines de verificación.
-- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Checkpoints de cuantización, conjuntos de datos y núcleos de inferencia.
+- **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Repositorios principales de código, entornos de ejecución y especificaciones técnicas.
+- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Entornos de verificación de compilación, arneses de pruebas y repositorios espejo.
+- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Núcleos de cálculo numérico de alto rendimiento, conjuntos de datos de referencia y especificaciones de evaluación.
 
 ---
 

@@ -8,17 +8,17 @@
 
 ### Systems & Security Engineering
 
-Systems and security engineer focused on deterministic low-level runtimes, binary analysis tooling, memory-safe execution environments, and optimized local AI inference kernels. Emphasizing first-principles architecture, minimal dependencies, and reproducible builds.
+Senior systems and security engineer designing deterministic low-level runtimes, binary analysis tooling, memory-safe execution environments, and high-concurrency pipelines. Emphasizing first-principles architecture, minimal dependencies, and reproducible builds.
 
 ---
 
-### Core Research & Architecture Principles
+### Core Engineering Principles
 
-- **Deterministic Execution**: Guaranteeing bit-exact reproducibility across toolchains, compilers, and build environments.
+- **Deterministic Execution**: Guaranteeing bit-exact reproducibility and invariance across toolchains, compilers, and execution environments.
 - **Memory Safety & Runtime Integrity**: Auditing native boundaries, enforcing capability-based memory models, and isolating execution surfaces.
-- **Low-Overhead High-Performance Computing**: Vectorized SIMD computing, SIMD/AVX kernels, and cache-coherent data layout design.
-- **Forensic Reverse Engineering**: Decompilation pipelines, static analysis invariants, and deterministic behavioral verification.
-- **Edge Inference Acceleration**: Quantization algorithms (GGUF, AWQ, EXL2) and optimized execution graphs for constrained local hardware.
+- **Low-Overhead High-Performance Computing**: Vectorized SIMD/AVX computing, cache-coherent data layout design, and zero-overhead abstractions.
+- **Concurrency & Lock-Free Design**: Lock-free ring buffers, atomic synchronization primitives, and cache-aligned structures for scalable parallel architectures.
+- **Binary Forensics & Security Audit**: Static analysis invariants, deep decompilation, and control-flow verification for byte-level assurance.
 
 ---
 
@@ -27,18 +27,18 @@ Systems and security engineer focused on deterministic low-level runtimes, binar
 | Domain | Core Technologies & Toolchains |
 | :--- | :--- |
 | **Systems & Low-Level** | C, C++, Rust, Go, x86_64 / ARM64 Assembly, Linux Kernel / Windows NT Internals |
-| **Reverse Engineering & Security** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
-| **Inference & Acceleration** | CUDA, llama.cpp / GGUF, TensorRT, Triton, OpenVINO, ONNX Runtime |
-| **Distributed & Cloud Native** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
+| **Binary Analysis & Security** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
+| **Parallel Computing & Kernel Tuning** | CUDA, SIMD (AVX2/AVX-512/NEON), OpenMP, Cache Profiling, Compiler Optimization |
+| **Distributed Systems & Networking** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
 | **Storage & Concurrency** | Zero-Copy I/O, Lock-Free Ring Buffers, LSM Trees, Memory-Mapped Persistence |
 
 ---
 
 ### Platform Index
 
-- **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Primary source repositories, runtimes, and engineering specs.
-- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Continuous integration mirrors, automated verification pipelines.
-- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Model quantization checkpoints, evaluation datasets, inference kernels.
+- **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Primary source code repositories, system runtimes, and engineering specs.
+- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Build pipeline verification, testing harnesses, and mirror repositories.
+- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — High-performance numerical computing kernels, benchmark datasets, and evaluation specs.
 
 ---
 

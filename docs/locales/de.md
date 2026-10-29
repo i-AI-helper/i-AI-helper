@@ -8,17 +8,17 @@
 
 ### Systems & Security Engineering
 
-System- und Sicherheitsingenieur mit Schwerpunkt auf deterministischen Low-Level-Laufzeitumgebungen, Binäranalyse-Werkzeugen, speichersicheren Ausführungsumgebungen und optimierten lokalen KI-Inferenz-Kernels. Fokus auf First-Principles-Architektur und reproduzierbare Builds.
+Senior System- und Sicherheitsingenieur mit Schwerpunkt auf deterministischen Low-Level-Laufzeitumgebungen, Binäranalyse-Werkzeugen, speichersicheren Ausführungsumgebungen und hochgradig nebenläufigen Daten-Pipelines. Fokus auf First-Principles-Architektur und reproduzierbare Builds.
 
 ---
 
-### Forschungs- und Architekturprinzipien
+### Grundlegende Ingenieurprinzipien
 
-- **Deterministische Ausführung**: Garantie exakter Bit-für-Bit-Reproduzierbarkeit über Toolchains, Compiler und Build-Umgebungen hinweg.
-- **Speichersicherheit und Laufzeitintegrität**: Tiefenprüfung nativer Schnittstellen, fähigkeitsbasierte Speichermodelle und Isolation von Ausführungsflächen.
-- **Hochleistungsrechnen mit minimalem Overhead**: Vektorisierte SIMD/AVX-Berechnungen und cache-kohärentes Speicherlayout.
-- **Forensisches Reverse Engineering**: Dekompilierungs-Pipelines, Invarianten der statischen Analyse und deterministische Verhaltensprüfung.
-- **Edge-Inferenz-Beschleunigung**: Quantisierungsalgorithmen (GGUF, AWQ, EXL2) und optimierte Berechnungsgraphen für ressourcenbeschränkte lokale Hardware.
+- **Deterministische Ausführung (Deterministic Execution)**: Garantie exakter Bit-für-Bit-Reproduzierbarkeit und Invarianz über Toolchains, Compiler und Ausführungsumgebungen hinweg.
+- **Speichersicherheit und Laufzeitintegrität (Memory Safety & Runtime Integrity)**: Tiefenprüfung nativer Schnittstellen, fähigkeitsbasierte Speichermodelle und Isolation von Ausführungsflächen.
+- **Hochleistungsrechnen mit minimalem Overhead (Low-Overhead HPC)**: Vektorisierte SIMD/AVX-Berechnungen und cache-kohärentes Speicherlayout.
+- **Nebenläufigkeitskontrolle & Lock-Free-Design (Concurrency & Lock-Free Design)**: Lock-freie Ringpuffer, atomare Synchronisationsprimitive und cache-ausgerichtete Datenstrukturen.
+- **Forensische Binäranalyse und Audit (Binary Forensics & Audit)**: Verifikation von Invarianten der statischen Analyse, tiefgreifende Dekompilierung und Kontrollfluss-Audits.
 
 ---
 
@@ -27,9 +27,9 @@ System- und Sicherheitsingenieur mit Schwerpunkt auf deterministischen Low-Level
 | Bereich | Kerntechnologien und Toolchains |
 | :--- | :--- |
 | **System- und Low-Level-Entwicklung** | C, C++, Rust, Go, x86_64 / ARM64 Assembler, Linux-Kernel / Windows NT Internals |
-| **Reverse Engineering & Sicherheit** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
-| **Inferenz & Hardwarebeschleunigung** | CUDA, llama.cpp / GGUF, TensorRT, Triton, OpenVINO, ONNX Runtime |
-| **Verteilte Systeme & Cloud Native** | Linux eBPF, Docker, POSIX Runtimes, Hochleistungs-gRPC / Protocol Buffers |
+| **Binäranalyse & Sicherheit** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
+| **Parallele Verarbeitung & Kernel-Tuning** | CUDA, SIMD (AVX2/AVX-512/NEON), OpenMP, Cache Profiling, Compiler Optimization |
+| **Verteilte Systeme & Netzwerke** | Linux eBPF, Docker, POSIX Runtimes, Hochleistungs-gRPC / Protocol Buffers |
 | **Speicherarchitektur & Nebenläufigkeit** | Zero-Copy I/O, Lock-freie Ringpuffer, LSM-Bäume, Memory-Mapped Persistence |
 
 ---
@@ -37,8 +37,8 @@ System- und Sicherheitsingenieur mit Schwerpunkt auf deterministischen Low-Level
 ### Plattform-Verzeichnis
 
 - **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — Hauptquellcode-Repositories, System-Runtimes und Spezifikationen.
-- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Continuous-Integration-Spiegel und automatisierte Verifizierungspipelines.
-- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Modellquantisierungs-Checkpoints, Evaluierungsdatensätze und Inferenz-Kernels.
+- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — Build-Verifikationsumgebungen, Test-Harnesses und Spiegel-Repositories.
+- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — Numerische Hochleistungs-Rechenkerne, Benchmark-Datensätze und Evaluierungsspezifikationen.
 
 ---
 

@@ -8,17 +8,17 @@
 
 ### Systems & Security Engineering
 
-결정론적 저수준 런타임, 바이너리 분석 도구, 메모리 안전 실행 환경, 그리고 로컬 AI 추론 가속 커널을 연구 및 개발하는 시스템/보안 엔지니어입니다. 불필요한 추상화를 배제하고 제1원리(First-Principles) 아키텍처와 재현 가능한 빌드(Reproducible Builds)를 지향합니다.
+결정론적 저수준 런타임, 바이너리 분석 도구, 메모리 안전 실행 환경, 고성능 동시성 파이프라인을 설계하고 개발하는 시니어 시스템/보안 엔지니어입니다. 불필요한 추상화를 지양하고 제1원리(First-Principles) 아키텍처와 재현 가능한 빌드(Reproducible Builds)를 추구합니다.
 
 ---
 
-### 핵심 연구 및 아키텍처 원칙
+### 핵심 엔지니어링 원칙
 
-- **결정론적 실행 (Deterministic Execution)**: 컴파일러, 툴체인, 실행 환경 전반에서 비트 단위까지 완벽하게 동일한 재현성을 보장합니다.
+- **결정론적 실행 (Deterministic Execution)**: 컴파일러, 툴체인, 실행 환경 전반에서 비트 단위까지 완벽하게 동일한 재현성과 불변성을 보장합니다.
 - **메모리 안전성 및 런타임 무결성 (Memory Safety & Runtime Integrity)**: 네이티브 경계면을 정밀 감사하고, 역량 기반 메모리 모델 및 실행 표면 격리를 적용합니다.
-- **초저지연 고성능 컴퓨팅 (Low-Overhead HPC)**: SIMD/AVX 벡터화 연산, 캐시 친화적 메모리 레이아웃 설계를 통해 하드웨어 한계 성능을 인출합니다.
-- **포렌식 역공학 및 정적 분석 (Forensic Reverse Engineering)**: 정밀 디컴파일 파이프라인, 정적 분석 불변식 검증, 바이너리 수준의 결정론적 동작 감사를 수행합니다.
-- **엣지 추론 가속화 (Edge Inference Acceleration)**: 양자화 알고리즘(GGUF, AWQ, EXL2)과 연산 그래프 최적화를 통해 로컬 하드웨어 효율을 극대화합니다.
+- **초저지연 고성능 컴퓨팅 (Low-Overhead HPC)**: SIMD/AVX 벡터화 연산, 캐시 친화적 메모리 레이아웃 설계를 통해 하드웨어의 잠재 성능을 극한까지 이끌어냅니다.
+- **동시성 제어 및 무잠금 구조 (Concurrency & Lock-Free Design)**: 무잠금(Lock-Free) 링 버퍼, 원자적 동기화 기본요소, 캐시 일관성 설계를 바탕으로 확장성 높은 병렬 아키텍처를 구축합니다.
+- **포렌식 바이너리 분석 및 감사 (Binary Forensics & Audit)**: 정적 분석 불변식 검증, 심층 디컴파일 및 제어 흐름 분석을 통해 바이너리 수준의 안전성을 입증합니다.
 
 ---
 
@@ -27,9 +27,9 @@
 | 분야 | 핵심 기술 스택 및 도구체계 |
 | :--- | :--- |
 | **시스템 및 저수준** | C, C++, Rust, Go, x86_64 / ARM64 Assembly, Linux Kernel / Windows NT Internals |
-| **역공학 및 보안 감사** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
-| **추론 및 하드웨어 가속** | CUDA, llama.cpp / GGUF, TensorRT, Triton, OpenVINO, ONNX Runtime |
-| **분산 시스템 및 인프라** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
+| **바이너리 분석 및 보안** | Ghidra, IDA Pro, x64dbg, Binary Ninja, Frida, LLVM / Clang AST Tooling |
+| **병렬 연산 및 커널 최적화** | CUDA, SIMD (AVX2/AVX-512/NEON), OpenMP, Cache Profiling, Compiler Optimization |
+| **분산 시스템 및 네트워킹** | Linux eBPF, Docker, POSIX Runtimes, High-Throughput gRPC / Protocol Buffers |
 | **스토리지 및 동시성** | Zero-Copy I/O, Lock-Free Ring Buffers, LSM Trees, Memory-Mapped Persistence |
 
 ---
@@ -37,8 +37,8 @@
 ### 플랫폼 연계
 
 - **GitHub**: [github.com/i-AI-helper](https://github.com/i-AI-helper) — 메인 소스 코드베이스, 시스템 런타임, 엔지니어링 명세
-- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — CI/CD 자동화 파이프라인, 교차 검증 및 미러 저장소
-- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — 모델 양자화 체크포인트, 벤치마크 데이터셋, 추론 커널
+- **GitLab**: [gitlab.com/jo060235355](https://gitlab.com/jo060235355) — 빌드 파이프라인 검증 환경, 테스트 하네스 및 미러 저장소
+- **Hugging Face**: [huggingface.co/kfoikeom](https://huggingface.co/kfoikeom) — 고성능 수치 연산 커널, 벤치마크 데이터셋 및 평가 명세
 
 ---
 
